@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="backgrouund.css">
-    </head>
-    <body>
-        <button >
+<html >
+<head>
+    
+    <title>Random Background Color</title>
+    <link rel="stylesheet" href="backgrouund.css">
+</head>
+<body onclick="clickmeforchance()">
+    <button>
+            Click me!
+    </button>
 
-        </button>
-    </body>
+    <script>
+        function clickmeforchance() {
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
 </html>
