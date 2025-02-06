@@ -2,10 +2,15 @@
 <html>
     <head>
         <style>
-            .alligh{
-                line-height: 20;
+             * {
+            margin: 0;
+            padding: 0;
+            
+        }
+            .font{
+                
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 40px;
             }
         </style>
     </head>
@@ -13,14 +18,22 @@
         <div style="
             display: grid;
             grid-template-columns: 1fr 1fr;
+            width:100vw;
+            height: 100vh;
             ">
-            <div style="background-color: lightblue;">
-                <p class="alligh">
+            <div style="background-color: lightblue;
+            display: flex;
+            align-items: center;
+            ">
+                <p class="font">
                     Grid one
                 </p>
             </div>
-            <div style="background-color: lightpink;">
-                <p class="alligh">
+            <div style="background-color: lightpink;
+             display: flex;
+             align-items: center;
+             ">
+                <p class="font">
                     Grid two
                 </p>
             </div>
