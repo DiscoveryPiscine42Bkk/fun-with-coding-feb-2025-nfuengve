@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        .balloon{
+           
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            cursor: pointer;
+            transition width: 1s,height: 1s;
+        }
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+       </style>
+    </head>
+    <body>
+        <div class="center">
+            <div class="balloon" onclick="
+                let size =blowupballon();
+                if(size >= 420){
+                balloon.style.width = '200px';
+                balloon.style.height = '200px';
+    
+            }
+                "
+                onmouseleave="shrinkballoon()">
+        </div>
+        
+            
+     </div>
+        
+    
+     <script>
+        let balloon = document.querySelector('.balloon');
+       
+        let colors = ['red','green','blue'];
+        let colorindex = 0;
+        const alert = blowupballon();
+        
+
+        function blowupballon() {
+            let size = balloon.offsetWidth
+            let newSize = size +10;
+            colorindex += 1;
+            if(colorindex === 3){
+                colorindex = 0;
+            }
+
+            balloon.style.width = newSize + 'px';
+            balloon.style.height = newSize + 'px';
+            balloon.style.backgroundColor = colors[colorindex]; 
+            
+            return size;
+        }
+       
+
+        function shrinkballoon() {
+            let balloon = document.querySelector('.balloon');
+            let size = balloon.offsetWidth; 
+            colorindex -=1;
+            if(colorindex ===-1){
+                colorindex = 2;
+            }
+            let newSize = Math.max(200, size - 5);
+            balloon.style.width = newSize + 'px';
+            balloon.style.height = newSize + 'px';
+            balloon.style.backgroundColor = colors[colorindex]; 
+        }
+     </script>
+
+     
+    </body>
+</html>
