@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>nfuengve</title>
+    <style>
+        /* Tab bar styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .tabbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+            transition: backgroud 0.3s ease-in-out;
+           
+        }
+        .tabbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .tabbar a:hover {
+            background: #575757;
+        }
+        /* Sections styling */
+        .section {
+            padding: 100px 20px;
+            height: 100vh; /* Adjust as needed */
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            
+            border: 2px ;
+        }
+        .sectionbox{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            
+            
+        }
+        .box{
+            background-color: white;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+    
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .img{
+            max-height: 500px;
+        }
+        .header{
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        .arrow{
+            font-size: 30px;
+            color: red;
+        }
+    
+
+        
+        #home { background: #A1A6B4; }
+        #profile { background: #94c5cc; }
+        #activity { background: #b4d2e7; }
+        #skill { background: #f1bf98; }
+        #contact { background:lightblue;}
+    
+    </style>
+</head>
+<body>
+
+    <nav class="tabbar">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#activity">Activity</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="section">
+        <h1>Home</h1>
+        <div class="sectionbox">
+            <div class="box" style="flex: 1;"></div>
+            <div class="box" style="flex: 2;">
+                <h1>Welcome to my profolio</h1>
+            
+                <img src="https://i.postimg.cc/sggsX6tB/IMG-6223.jpg" class="img" alt="">
+            </div>
+
+            <div class="box" style="flex: 1;"></div>
+
+
+
+        </div>
+    </section>
+
+    <section id="profile" class="section">
+        <h1>Profile</h1>
+        <div class="sectionbox">
+
+            <div class="box" style="flex: 1;">
+                <p><strong>Name : Napat Fuengverojsakul</strong></p>
+                <p>Age : 23</p>
+                <p>High school : Triam udom suksanomklao (tun)</p>
+                <h1>Currently studying in Electrical Engineering</h1>
+                <p>I am interested in music, languages, and technology</p>
+
+            </div>
+            <div class="box" style="flex: 1;"> 
+            <img src="https://i.postimg.cc/bJmVJgbT/cherry.jpg" class="img" alt="">    
+            </div>
+            
+    </section>
+
+    <section id="activity" class="section">
+        <h1>Activity</h1>
+        <div class="sectionbox">
+            <div class="box" style="flex: 1;">
+                <img src="https://i.postimg.cc/Gh6LtJxd/nstex.jpg" alt="">
+            </div>
+            <div class="box" style="flex: 1;">
+                <p> <span class="arrow">&larr;</span> Cooperative at  ns texeng-amec</p>
+                <div style="line-height: 3px;">
+                    <p> Summer internship at EGAT</p>
+                    <p >(MAE MOH POWERPLANT) <span class="arrow">&rarr;</span></p>
+                </div>
+               
+            </div>
+            <div class="box" style="flex: 1;">
+                <img src="https://i.postimg.cc/L5b1nYNw/IMG-62421.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skill" class="section">
+        <h1>Skill</h1>
+        <div class="sectionbox">
+            <div class="box" style="flex: 0.2;">
+               <strong style="font-size: 24px;">drawing</strong> 
+            </div>
+            <div class="box" style="flex: 1;">
+                <img src="https://i.postimg.cc/fkQ0cnQf/IMG-4492.jpg" class="img" alt="">
+            </div>
+            <div class="box" style="flex: 0.2;">
+               <strong style="font-size: 28px;">music</strong> 
+            </div>
+            <div class="box" style="flex: 1">
+                <img src="https://i.postimg.cc/PqV2n4Dn/Screenshot-2025-02-07-212158.png" class="img" alt="">
+            </div>
+            <div class="box" style="flex: 0.5;">
+                <strong style="font-size: 28px;">japanese language</strong> 
+                
+             </div>
+             <div class="box" style="flex: 1">
+                <img src="https://i.postimg.cc/Rh51vbVy/jlpt.jpg" class="img"  alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Contact</h1>
+        <div class="sectionbox">
+            <div class="box" style="flex: 1;"></div>
+            <div class="box" style="flex: 2;">
+                <p class="header">My Contact</p>
+                <p>Email : 64010210@kmitl.ac.th</p>
+                <a href="https://github.com/DiscoveryPiscine42Bkk/fun-with-coding-feb-2025-nfuengve" target="_blank">Here is my Github</a>
+            </div>
+
+            <div class="box" style="flex: 1;"></div>
+
+
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+#home {
+    background: url('https://i.postimg.cc/3xWpj9Cz/BG.png') center/cover;
+    color: white;
+    text-align: center;
+}
+
+#home h1 {
+    margin-left: 400px;
+}
+
+#about, #experience, #skills, #contact {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+#about {
+    background: lightblue;
+}
+
+#experience {
+    background: lightgray;
+}
+
+#skills {
+    background: rgb(224, 200, 255);
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#skills p {
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+#contact {
+    background: lightgoldenrodyellow;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #f3c848;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #fade92;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+img.rounded-circle {
+    border: 3px solid #f8b400;
+}
