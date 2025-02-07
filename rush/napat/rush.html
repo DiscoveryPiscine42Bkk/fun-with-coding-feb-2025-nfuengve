@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             div {
+           margin: 0;
+           padding: 0;
+            
+        }
+            .backco{
+            background-color: lightblue;
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            justify-content: center;
+
+            }
+            .sectionrow{
+            display: flex;
+            flex-direction: row;
+            height:100%;
+            }
+            .sectionver{
+                display: flex;
+                flex-direction: column;
+            }
+            .box1{
+                flex: 1;
+                display: flex   ;
+            }
+            .box1half{
+                flex:1.5 ;
+                display: flex;
+                
+            }
+            .image{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            width: 100vw;
+            height: 2000px;
+            ">
+            <div class="sectionrow" >
+                <div class="box1" style="background-color: lightblue;">
+                    
+                    
+                    <img class="image"  src="./image/goku.png" alt=""></div>    
+                <div class="box1" style="background-color: lightcoral;">b</div>
+                <div class="box1" style="background-color: aquamarine;">c</div>
+            </div>
+
+
+            <div class="sectionrow">
+                <div class="box1half" style="background-color: lightcyan;"></div>
+                <div class="box1" style="background-color: lightgreen;"></div>
+            </div>
+            <div style="background-color: aquamarine;
+            align-items: center;">
+                third
+            </div>
+
+            <div style="background-color: aqua;">
+
+            </div>
+
+        </div>
+       
+                
+            
+    </body>
+</html>
