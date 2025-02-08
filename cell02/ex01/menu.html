@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+   
+    justify-content: center;
+}
+.dropdown {
+}
+.dropdown-btn {
+    background-color: #cb9a31;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+.dropdown-content p {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+.dropdown-content img{
+    display: block;
+}
+
+.dropdown-content p:hover {
+    background-color: #faffb9;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-btn {
+    background-color: #f6da23;
+}
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        
+        <button class="dropdown-btn">Dropdown Menu</button>
+        <div class="dropdown-content">
+           <p>ham sandwich</p>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBQUn_YSf66hi3QC1NgrhhcndPQDKFH4zFw&s" style="height: 100px;" alt="">
+           <p>chess sandiwch</p>
+           <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2024/05/veg-cheese-sandwich-recipe.jpg" style="height: 100px;" alt="">
+           <p>ham and chess sandwich</p>
+           <img src="https://img.wongnai.com/p/1920x0/2017/10/10/4813efd0220843b5898715ae64ad1faa.jpg" style="height: 100px;" alt="">
+        </div>
+    </div>
+</body>
+</html>
