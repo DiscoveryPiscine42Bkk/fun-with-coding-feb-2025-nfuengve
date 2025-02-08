@@ -1,12 +1,14 @@
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
     height: 100vh;
    
     justify-content: center;
-}
-.dropdown {
-}
+    }
+    .dropdown {
+
+    }
 .dropdown-btn {
     background-color: #cb9a31;
     color: white;
