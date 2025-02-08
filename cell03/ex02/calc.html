@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <style>
+            *{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 16px;
+            }
+            button{
+                height: 100px;
+                width: 100px;
+                background-color: yellow;
+            }
+            button:hover{
+                background-color: rgb(255, 255, 227);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-size: 50px;">CALUCULATOR</h1>
+        <input type="number" id="firstvalue" placeholder="Enter first value">
+
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        
+        <input type="number" id="secondvalue" placeholder="Enter second value">
+        <br>
+        <button onclick="calcu()">'Try me!'</button>
+
+        <script>
+            function calcu(){
+            let val1 = parseFloat(document.getElementById("firstvalue").value);
+            let operate = document.getElementById("operation").value;
+            let val2 = parseFloat(document.getElementById("secondvalue").value);
+            
+            let result;
+
+                if(operate === "+"){
+                    result = val1 + val2;
+                }
+                else if (operate === "-"){
+                    result = val1 - val2;
+                }
+                else if (operate === "*"){
+                    result = val1 * val2;
+                }
+                else if (operate === "/"){
+                    result = val1 / val2;
+                }
+                else if (operate === "%"){
+                    result = val1 % val2;
+                }
+
+
+                if (val1 < 0 || val2<0) {
+                alert("Error :(");
+                }
+                else if(val2 === 0 && ((operate === "/")||(operate === "%"))){
+                     alert("It over 9000 ");
+                }
+                
+                else{
+                    alert("Result = "  + result);
+                    console.log("Result: " + result);
+                }
+               
+            }
+           
+            setInterval(function() {
+            alert("Please use me");
+            }, 30000); 
+
+        </script>
+
+
+    </body>
+</html>
