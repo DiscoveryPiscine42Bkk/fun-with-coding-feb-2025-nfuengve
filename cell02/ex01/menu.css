@@ -7,7 +7,7 @@ body {
     justify-content: center;
     }
     .dropdown {
-
+        height: 100vh;
     }
 .dropdown-btn {
     background-color: #cb9a31;
